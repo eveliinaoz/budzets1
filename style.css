@@ -7,10 +7,19 @@
 }
 
 .rezult {
-    background: #4a5f6f;
-    text-align: center;
+    background: #c8efce;
+    text-align: left;
+    padding-left: 10px;
+    width: 500px;
+    height: 500px;
 }
 
 .myPieChart {
     text-align: center;
+}
+.atlikums{
+    background: hotpink;
+    width: 500px;
+    height: 100px;
+    padding-left: 10px;
 }
