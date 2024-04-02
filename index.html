@@ -10,37 +10,97 @@
 
 </head>
 
-<body>
+<body onload="startTime()">
     
 <div class="header">
     <h1>GUDRĀNAUDA</h1>
 </div>
 
-<div class="rezult">
-    <p>Ienākumi : <input type="text" id="ievade"></p>
-    <p>Mājoklis : <input type="text" id="ievade">
-       <br> 
-       Transports : <input type="text" id="ievade">
-       <br>
-       Mācības : <input type="text" id="ievade">
-       <br>
-       Personīgās vajadzības : <input type="text" id="ievade">
-       <br>
-       Iekrājumi : <input type="text" id="ievade">
-       <br>
-    </p>
-    <canvas id="myChart" ></canvas>
-   
+
+<div id="txt"></div>
+
+
+
+<div class="kopa">
+
+
+    <div class="rezult">
+        <p>Ienākumi : <id="ienakumi"></p>
+        <p>Mājoklis : <input type="text" id="ievade">
+           <br> 
+           Transports : <input type="text" id="ievade">
+           <br>
+           Mācības : <input type="text" id="ievade">
+           <br>
+           Personīgās vajadzības : <input type="text" id="ievade">
+           <br>
+           Iekrājumi : <input type="text" id="ievade">
+           <br>
+        </p>
+        <canvas id="myChart" ></canvas>
+       
+    </div>
+    
+    
+    
+
+    
+
+
+    <div class="iev1">
+       <div class="teksts">
+        <p><b>Meneša ienākumi</b></p>
+        <p>Alga:<input type="number" id= "alga" size="1"style="background-color:white"></p>
+        <p> Citi:  <input type="number" id="citia"></p>
+    
+        <p><b>Transports</b></p>
+        <p> Mašīnas līzings: <input type="number" id="lizings"></p>
+        <p> Mašīnas apdrošināšana: <input type="number" id="apdrosinasana"></p>
+        <p> Degviela:<input type="number" id="degviela"></p>
+         
+        <p><b>Personīgās vajadzības</b></p>
+        <p> Pārtika: <input type="number" id="partika"></p>
+        <p> Izklaides: <input type="number" id="izklaides"></p>
+        <p> Apģērbs:<input type="number" id="apgerbs"></p>
+        <p> Medicīna:<input type="number" id="medicina"></p>
+        <p> Citi:<input type="number" id="citib"></p>
+        </div>
+    </div> 
+
+
+
+  <div class="iev2">
+    <div class="teksts">
+        <p><b>Mājoklis</b></p>
+        <p> Īre: <input type="number" id="ire"></p>
+        <p> Komunālie:  <input type="number" id="komunalie"></p>
+        <p> Pakalpojumi: <input type="number" id="pakalpojumi"></p>
+    
+        <p><b>Mācības</b></p>
+        <p> Mācību izmaksas: <input type="number" id="macibuiz"></p>
+        <p> Mācibu aizdevums: <input type="number" id="macibuaiz"></p>
+         
+        <p><b>Iekrājumi</b></p>
+        <p> Ārkārtas fonds: <input type="number" id="fonds"></p>
+        </div>
+    </div>
 </div>
+
+
+<div class="kopa2">
+
 
 <div class="atlikums">
     <br>
     <P>Atlikums : <input type="text" id="ievade"></P>
 </div>
 
-<script>
 
-    </script>
+<p>  <button onclick="summa()">Pārbaudīt</button></p>
+
+</div>
+
+
 
 
     <script src="script.js"></script>

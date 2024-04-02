@@ -11,7 +11,9 @@
     text-align: left;
     padding-left: 10px;
     width: 500px;
-    height: 500px;
+    height: 600px;
+    border: 2px solid rgb(0, 0, 0);
+    margin-right: 50px;
 }
 
 .myPieChart {
@@ -22,4 +24,53 @@
     width: 500px;
     height: 100px;
     padding-left: 10px;
+    margin-left:70px;
+    border: 2px solid black;
+}
+
+.iev1 {
+    height: 600px;
+    width: 370px;
+    border: 2px solid rgb(0, 0, 0);
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+.iev2 {
+    height: 600px;
+    width: 370px;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.kopa{
+    display: flex;
+    margin-left:70px;
+    margin-top: 50px;
+}
+
+.teksts{
+    margin-left: 30px;
+}
+
+input{
+    width: 50px;
+}
+
+p{
+    font-size: 21px;
+}
+
+.kopa2{
+    display: flex;
+    margin-top:20px;
+}
+
+button{
+    border-radius: 8px;
+    font-size: 35px;
+    background-color: #636363;
+    color: white;
+    margin-left: 220%;
+
 }
