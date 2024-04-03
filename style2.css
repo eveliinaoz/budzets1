@@ -1,0 +1,33 @@
+.header {
+    padding: 60px;
+    text-align: center;
+    background: #8b6597;
+    color: white;
+    font-size: 30px;
+}
+.sadalas {
+    padding: 60px;
+    line-height: 700%;
+    font-size: 20px;
+}
+
+.kopa{
+    display: flex;
+}
+
+.ptd{
+    padding-top: 50px;
+    padding-left: 150px;
+    font-size: 20px;
+}
+
+.budzets{
+    padding-top: 50px;
+    padding-left: 300px;
+    font-size: 20px;
+}
+.starp{
+    padding-top: 50px;
+    padding-left: 300px;
+    font-size: 20px;
+}
