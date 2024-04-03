@@ -1,3 +1,7 @@
+p{
+    font-size: 40px;
+    text-align: center;
+}
 .header {
     padding: 60px;
     text-align: center;
@@ -9,25 +13,53 @@
     padding: 60px;
     line-height: 700%;
     font-size: 20px;
+    border-right: 1px solid black;
+    height: 370px;
+    border-bottom: 1px solid black;
 }
 
-.kopa{
+.kopa3{
     display: flex;
+    
 }
 
 .ptd{
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
     padding-top: 50px;
     padding-left: 150px;
+    padding-right: 100px;
     font-size: 20px;
+    height: 40px;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .budzets{
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
     padding-top: 50px;
-    padding-left: 300px;
+    padding-left: 150px;
+    padding-right: 100px;
     font-size: 20px;
+    height: 40px;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+
 }
 .starp{
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
     padding-top: 50px;
-    padding-left: 300px;
+    padding-left: 170px;
+    padding-right: 100px;
     font-size: 20px;
+    height: 40px;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+
 }
