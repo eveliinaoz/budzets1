@@ -15,7 +15,7 @@
 <div class="header">
     <h1>GUDRĀNAUDA</h1>
 </div>
-
+<hr>
 
 <div id="txt"></div>
 
@@ -25,21 +25,23 @@
 
 
     <div class="rezult">
-        <p>Ienākumi : <id="ienakumi"></p>
-        <p>Mājoklis : <input type="text" id="ievade">
+        <p>Ienākumi : <span id="ienakumi"></span></p>
+           
+        <p>Mājoklis : <span id="majoklis"></span>
            <br> 
-           Transports : <input type="text" id="ievade">
+           Transports : <span id="transports"></span>
            <br>
-           Mācības : <input type="text" id="ievade">
+           Mācības : <span id="macibas"></span>
            <br>
-           Personīgās vajadzības : <input type="text" id="ievade">
+           Personīgās vajadzības : <span id="pervajadzibas"></span>
            <br>
-           Iekrājumi : <input type="text" id="ievade">
+           Iekrājumi : <span id="iekrajumi"></span>
            <br>
         </p>
         <canvas id="myChart" ></canvas>
        
     </div>
+    
     
     
     
@@ -92,11 +94,11 @@
 
 <div class="atlikums">
     <br>
-    <P>Atlikums : <input type="text" id="ievade"></P>
+    <P>Atlikums : <span id="atlikums"></span></P>
 </div>
 
 
-<p>  <button onclick="summa()">Pārbaudīt</button></p>
+<p>  <button onclick="summa()">Aprēķināt</button></p>
 
 </div>
 
