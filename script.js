@@ -1,40 +1,54 @@
 
 
-
-
 function summa() {
-  let alga = document.getElementById("alga").value;
-  let citia = document.getElementById("citia").value;
-
-  let lizings = document.getElementById("lizings").value;
-  let apdrosinasana = document.getElementById("apdrosinasana").value;
-  let degviela = document.getElementById("degviela").value;
-
-  let partika = document.getElementById("partika").value;
-  let izklaides = document.getElementById("izklaides").value;
-  let apgerbs = document.getElementById("apgerbs").value;
-  let medicina = document.getElementById("medicina").value;
-  let citib = document.getElementById("citib").value;
-
-  let ire = document.getElementById("ire").value;
-  let komunalie = document.getElementById("komunalie").value;
-  let pakalpojumi = document.getElementById("pakalpojumi").value;
-
-  let macibuiz = document.getElementById("macibuiz").value;
-  let macibuaiz= document.getElementById("izklaides").value;
-
-  let fonds= document.getElementById("fonds").value;
 
 
-  let terini= (alga+citia)-(lizings+apdrosinasana+degviela+partika+izklaides+apgerbs+medicina+citib+ire+komunalie+pakalpojumi+macibuiz+macibuaiz+fonds);
-  console.log(terini);
+  
 
-  window.location.replace("e2.html");
+  let ienakumi=Number(document.getElementById("alga").value)+Number(document.getElementById("citia").value);
+  document.getElementById('ienakumi').innerHTML=ienakumi;
 
-}
+  let majoklis=Number(document.getElementById("ire").value)+Number(document.getElementById("komunalie").value)+Number(document.getElementById("pakalpojumi").value);
+  document.getElementById('majoklis').innerHTML=majoklis;
+ 
+  let transports=Number(document.getElementById("lizings").value)+Number(document.getElementById("apdrosinasana").value)+Number(document.getElementById("degviela").value);
+  document.getElementById('transports').innerHTML=transports;
+ 
+  let macibas=Number(document.getElementById("macibuiz").value)+Number (document.getElementById("macibuaiz").value);
+  document.getElementById('macibas').innerHTML=macibas; 
 
-const xValues = ["Mājoklis", "Transports", "Mācības", "Personālās vajadzības", "Iekrājumi"];
-const yValues = [55, 49, 44, 24, 15];
+  let pervajadzibas=Number(document.getElementById("partika").value)+Number(document.getElementById("izklaides").value)+Number(document.getElementById("apgerbs").value)+Number(document.getElementById("medicina").value)+Number(document.getElementById("citib").value);
+  document.getElementById('pervajadzibas').innerHTML=pervajadzibas;
+  
+  let iekrajumi=Number(document.getElementById("fonds").value);
+  document.getElementById('iekrajumi').innerHTML=iekrajumi;
+
+  // window.location.replace("e2.html");
+
+  
+
+
+
+
+const yValues=[];
+  
+const paterini=[majoklis,transports,macibas,pervajadzibas,iekrajumi]
+console.log(paterini)
+  let terini = majoklis+transports+macibas+pervajadzibas+iekrajumi;
+  let atlikums=ienakumi-terini;
+  document.getElementById("atlikums").innerHTML=atlikums;
+  for (let i=0; i<paterini.length;i++){
+
+    if (isNaN(paterini[i])){
+      yValues.push(0);
+    }
+
+    else{
+    yValues.push(Math.round(paterini[i]/terini*100));
+    }
+    console.log(yValues);
+  }
+  const xValues = ["Mājoklis", "Transports", "Mācības", "Personālās vajadzības", "Iekrājumi"];
 const barColors = [
   "#b91d47",
   "#00aba9",
@@ -54,7 +68,7 @@ new Chart("myChart", {
   },
   
 })
-
+}
 
 function startTime() {
   const today = new Date();
@@ -73,7 +87,5 @@ function checkTime(i) {
 }
 
 
-function diagramma(){
-  let ienakumi =document.getElementById("ienakumi").value;
-  ienakumi.innerHTML= alga+citia;
-}
+
+  
