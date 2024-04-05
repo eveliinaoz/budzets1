@@ -162,3 +162,6 @@ function myFunction() {
 function talak() {
   window.location.replace("index2.html");
 }
+function atpakal() {
+  window.location.replace("index.html");
+}
