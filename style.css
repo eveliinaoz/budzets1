@@ -24,7 +24,7 @@
     width: 500px;
     height: 100px;
     padding-left: 10px;
-    margin-left:70px;
+    margin-left:110px;
     border: 2px solid black;
 }
 
@@ -45,7 +45,7 @@
 
 .kopa{
     display: flex;
-    margin-left:70px;
+    margin-left:110px;
     margin-top: 50px;
 }
 
@@ -71,6 +71,20 @@ button{
     font-size: 35px;
     background-color: #636363;
     color: white;
-    margin-left: 220%;
 
+
+}
+
+.plkst{
+    font-size: 30px;
+    text-align: center;
+    margin-right: 120px;
+    margin-top: 30px;
+    border-radius: 8px;
+    border: 2px solid rgb(0, 0, 0);
+    margin-left:120px;
+}
+
+.poga{
+    margin-right: 100px;
 }
