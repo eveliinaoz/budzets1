@@ -106,7 +106,48 @@ function checkTime(i) {
 // }
 }
 
+function poga() {
+  if (majoklis>transports,macibas,pervajadzibas,iekrajumi){
+      macibasb.style.display = "none"
+      transportsb.style.display = "none"
+      majoklisb.style.display = "block";
+      personigasvajb.style.display = "none"
+      iekrajumib.style.display = "none"
+  }
+  if (transports>majoklis,macibas,pervajadzibas,iekrajumi){
+      macibasb.style.display = "none"
+      transportsb.style.display = "block"
+      majoklisb.style.display = "none";
+      personigasvajb.style.display = "none"
+      iekrajumib.style.display = "none"
+  }
+  if (macibas>transports,majoklis,pervajadzibas,iekrajumi){
+      macibasb.style.display = "block"
+      transportsb.style.display = "none"
+      majoklisb.style.display = "none";
+      personigasvajb.style.display = "none"
+      iekrajumib.style.display = "none"
+  }
+  if (pervajadzibas>transports,majoklis,macibas,iekrajumi){
+      macibasb.style.display = "none"
+      transportsb.style.display = "none"
+      majoklisb.style.display = "none"
+      personigasvajb.style.display = "block";
+      iekrajumib.style.display = "none"
+  }
+  if (iekrajumi>transports,majoklis,macibas,iekrajumi){
+      macibasb.style.display = "none"
+      transportsb.style.display = "none"
+      majoklisb.style.display = "none"
+      personigasvajb.style.display = "none"
+      iekrajumib.style.display = "block";
+  }
+}
 
+// function myFunction() {
+//   var x = document.getElementsByClassName(".vajadz532").rows[1].cells;
+//   x[1].innerHTML = "NEW CONTENT";
+// }
 
 function talak(){
   window.location.replace("index2.html");

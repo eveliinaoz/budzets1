@@ -4,7 +4,9 @@
     background: #8b6597;
     color: white;
     font-size: 30px;
+    font-family: 'Courier New', monospace;
 }
+
 
 .rezult {
     background: #c8efce;
@@ -14,10 +16,12 @@
     height: 600px;
     border: 2px solid rgb(0, 0, 0);
     margin-right: 50px;
+    font-family: 'Courier New', monospace;
 }
 
 .myPieChart {
     text-align: center;
+
 }
 .atlikums{
     background: hotpink;
@@ -26,6 +30,7 @@
     padding-left: 10px;
     margin-left:110px;
     border: 2px solid black;
+    font-family: 'Courier New', monospace;
 }
 
 .iev1 {
@@ -34,13 +39,14 @@
     border: 2px solid rgb(0, 0, 0);
     margin-left: 20px;
     margin-right: 20px;
-
+    font-family: 'Courier New', monospace;
 }
 
 .iev2 {
     height: auto;
     width: 370px;
     border: 2px solid rgb(0, 0, 0);
+    font-family: 'Courier New', monospace;
 }
 
 .kopa{
@@ -51,6 +57,7 @@
 
 .teksts{
     margin-left: 30px;
+
 }
 
 input{
@@ -71,8 +78,9 @@ button{
     font-size: 35px;
     background-color: #636363;
     color: white;
-
-
+    font-family: 'Courier New', monospace;
+    margin-right: 20px;
+    margin-left: 200px;
 }
 
 .plkst{
@@ -83,6 +91,7 @@ button{
     border-radius: 8px;
     border: 2px solid rgb(0, 0, 0);
     margin-left:120px;
+    font-family: 'Courier New', monospace;
 }
 
 .poga{
