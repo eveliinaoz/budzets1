@@ -2,7 +2,7 @@
 
 function summa() {
 
-
+// myChart.clearRect(0,0, 500,600);
   
 
   let ienakumi=Number(document.getElementById("alga").value)+Number(document.getElementById("citia").value);
@@ -23,7 +23,7 @@ function summa() {
   let iekrajumi=Number(document.getElementById("fonds").value);
   document.getElementById('iekrajumi').innerHTML=iekrajumi;
 
-  // window.location.replace("e2.html");
+
 
   
 
@@ -84,8 +84,30 @@ function startTime() {
 function checkTime(i) {
   if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
   return i;
+
+
+
+//   function poga() {
+//     if (bangladesa.checked){
+//         ind.style.display = "none"
+//         jap.style.display = "none"
+//         bang.style.display = "block";
+//     }
+//     if (japana.checked){
+//         ind.style.display = "none"
+//         jap.style.display = "block"
+//         bang.style.display = "none";
+//     }
+//     if (indonezija.checked){
+//         ind.style.display = "block"
+//         jap.style.display = "none"
+//         bang.style.display = "none";
+//     }
+// }
 }
 
 
 
-  
+function talak(){
+  window.location.replace("index2.html");
+}
