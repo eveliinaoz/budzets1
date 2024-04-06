@@ -84,12 +84,16 @@ button{
     background-color: #636363;
     color: white;
     font-family: 'Courier New', monospace;
+    box-shadow: 0 9px #000000;
+    cursor:pointer;
 }
+
 .TU{
     background-color: #9a909c;
     border-radius: 70px;
     width: 50%;
     margin-left: 400px;
+    padding: 20px;
 }
 .Atpakal{
     margin-right: 600px;

@@ -149,11 +149,12 @@ function poga() {
   }
 }
 
+
 function myFunction() {
-  let ienakumi = Number(document.getElementById("alga").value) + Number(document.getElementById("citia").value);
-  document.getElementById('ienakumi').innerHTML = ienakumi;
+  // let ienakumi = Number(document.getElementById("alga").value) + Number(document.getElementById("citia").value);
+  // document.getElementById('ienakumi').innerHTML = ienakumi;
   var x = document.getElementById("myTable").rows[1].cells;
-  x[1].innerHTML = 0,5*ienakumi;
+  x[1].innerHTML = "kkas";
 }
 
 

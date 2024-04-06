@@ -87,6 +87,7 @@ button{
     font-family: 'Courier New', monospace;
     margin-right: 20px;
     margin-left: 200px;
+    box-shadow: 0 9px #000000;
 }
 
 .plkst{
@@ -100,7 +101,5 @@ button{
     font-family: 'Courier New', monospace;
 }
 
-.poga{
-    margin-right: 100px;
-}
+
 
