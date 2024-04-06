@@ -2,7 +2,7 @@
 
 function summa() {
 
-  // myChart.clearRect(0,0, 500,600);
+ 
 
 
   let ienakumi = Number(document.getElementById("alga").value) + Number(document.getElementById("citia").value);
@@ -68,6 +68,64 @@ function summa() {
     },
 
   })
+
+
+let majoklisb=document.getElementById('majoklisb')
+  let transportsb=document.getElementById('transportsb')
+  let macibasb=document.getElementById('macibasb')
+  let iekrajumib=document.getElementById('iekrajumib')
+  let personigasvajb=document.getElementById('personigasvajb')
+  console.log(majoklis, transports, macibas, iekrajumi, pervajadzibas)
+let teksts;
+
+  if (majoklis > transports && majoklis > macibas && majoklis> pervajadzibas && majoklis > iekrajumi) {
+    macibasb.style.display = "none"
+    transportsb.style.display = "none"
+    majoklisb.style.display = "block";
+    personigasvajb.style.display = "none"
+    iekrajumib.style.display = "none"
+    teksts=  "tu esi cilvēks, kas savam mājoklim neliek robežas, tu iegādājies sākot no jauām tehnoloģijām savā mājā līdz greznām mēbelēm un aksesuāriem, tu vienmēr centies padarīt savu dzīves telpu par savu luksusa oāzi."
+  }
+  else if (transports > majoklis && transports > macibas && transports > pervajadzibas && transports > iekrajumi) {
+    console.log("t")
+    macibasb.style.display = "none"
+    transportsb.style.display = "block"
+    majoklisb.style.display = "none";
+    personigasvajb.style.display = "none"
+    iekrajumib.style.display = "none"
+    teksts="ietekmīgs un bagāts cilvēks, kas iztērē lielu naudas summu, lai nodrošinātu sev izsmalcinātu un greznu transportu. Tavas automašīnas, jahtas vai lidmašīnas ne tikai kalpo kā transportlīdzekļi, bet arī kā statusa simboli, atspoguļojot tavu augsto sociālo stāvokli un bagātību."
+  }
+  else if (macibas > majoklis && macibas> transports && macibas > pervajadzibas && macibas > iekrajumi) {
+    macibasb.style.display = "block"
+    transportsb.style.display = "none"
+    majoklisb.style.display = "none";
+    personigasvajb.style.display = "none"
+    iekrajumib.style.display = "none"
+    teksts="cilvēks, kurš ir vērts pieminēšanas, jo tu tērē daudz naudas, lai iegūtu izglītību. tavi mērķi ir augsti un tu esi gatavs ieguldīt finansiāli, lai sasniegtu savums mēŗķus."
+  }
+  else if (pervajadzibas> majoklis && pervajadzibas > macibas && pervajadzibas > transports && pervajadzibas > iekrajumi) {
+    macibasb.style.display = "none"
+    transportsb.style.display = "none"
+    majoklisb.style.display = "none"
+    personigasvajb.style.display = "block";
+    iekrajumib.style.display = "none"
+    teksts="cilvēks, kurš tērē daudz naudas lai apmierinātu savas personīgās vajadzības ar ekskluzīviem pirkumiem un greznām izklaidēm, nereti nņemot vērā finansiālās sekas vai pat citu cilvēku vajadzības."
+  }
+  else if (iekrajumi > majoklis && iekrajumi > macibas && iekrajumi > pervajadzibas && iekrajumi>transports) {
+    macibasb.style.display = "none"
+    transportsb.style.display = "none"
+    majoklisb.style.display = "none"
+    personigasvajb.style.display = "none"
+    iekrajumib.style.display = "block";
+    teksts="cilvēks, kas ir disciplinēts un mērķtiecīgs. Tu saproti finanšu stabilitātes nozīmi un ilgtermiņa finansiālo mērķu svarīgumu, tāpēc tu veic ieguldījumus un centies taupīt pēc iespējas vairāk, lai nodrošinātu savu finansiālo nākotni. Tu prasmīgi plāno un kontrolē savu tēriņu, lai maksimāli palielinātu savus iekrājumus."
+  }
+  else{
+    teksts=" "
+  }
+
+  document.getElementById('teksts').innerHTML = teksts;
+
+  
 }
 
 function startTime() {
@@ -87,75 +145,7 @@ function checkTime(i) {
 }
 
 
-//   function poga() {
-//     if (bangladesa.checked){
-//         ind.style.display = "none"
-//         jap.style.display = "none"
-//         bang.style.display = "block";
-//     }
-//     if (japana.checked){
-//         ind.style.display = "none"
-//         jap.style.display = "block"
-//         bang.style.display = "none";
-//     }
-//     if (indonezija.checked){
-//         ind.style.display = "block"
-//         jap.style.display = "none"
-//         bang.style.display = "none";
-//     }
-// }
 
-
-function poga() {
-  if (majoklis > transports, macibas, pervajadzibas, iekrajumi) {
-    macibasb.style.display = "none"
-    transportsb.style.display = "none"
-    majoklisb.style.display = "block";
-    personigasvajb.style.display = "none"
-    iekrajumib.style.display = "none"
-    documentWrite("tu esi cilvēks, kas savam mājoklim neliek robežas, tu iegādājies sākot no jauām tehnoloģijām savā mājā līdz greznām mēbelēm un aksesuāriem, tu vienmēr centies padarīt savu dzīves telpu par savu luksusa oāzi.")
-  }
-  if (transports > majoklis, macibas, pervajadzibas, iekrajumi) {
-    macibasb.style.display = "none"
-    transportsb.style.display = "block"
-    majoklisb.style.display = "none";
-    personigasvajb.style.display = "none"
-    iekrajumib.style.display = "none"
-    documentWrite("ietekmīgs un bagāts cilvēks, kas iztērē lielu naudas summu, lai nodrošinātu sev izsmalcinātu un greznu transportu. Tavas automašīnas, jahtas vai lidmašīnas ne tikai kalpo kā transportlīdzekļi, bet arī kā statusa simboli, atspoguļojot tavu augsto sociālo stāvokli un bagātību.")
-  }
-  if (macibas > transports, majoklis, pervajadzibas, iekrajumi) {
-    macibasb.style.display = "block"
-    transportsb.style.display = "none"
-    majoklisb.style.display = "none";
-    personigasvajb.style.display = "none"
-    iekrajumib.style.display = "none"
-    documentWrite("cilvēks, kurš ir vērts pieminēšanas, jo tu tērē daudz naudas, lai iegūtu izglītību. tavi mērķi ir augsti un tu esi gatavs ieguldīt finansiāli, lai sasniegtu savums mēŗķus.")
-  }
-  if (pervajadzibas > transports, majoklis, macibas, iekrajumi) {
-    macibasb.style.display = "none"
-    transportsb.style.display = "none"
-    majoklisb.style.display = "none"
-    personigasvajb.style.display = "block";
-    iekrajumib.style.display = "none"
-    documentWrite("cilvēks, kurš tērē daudz naudas lai apmierinātu savas personīgās vajadzības ar ekskluzīviem pirkumiem un greznām izklaidēm, nereti nņemot vērā finansiālās sekas vai pat citu cilvēku vajadzības.")
-  }
-  if (iekrajumi > transports, majoklis, macibas, iekrajumi) {
-    macibasb.style.display = "none"
-    transportsb.style.display = "none"
-    majoklisb.style.display = "none"
-    personigasvajb.style.display = "none"
-    iekrajumib.style.display = "block";
-    documentWrite("cilvēks, kas ir disciplinēts un mērķtiecīgs. Tu saproti finanšu stabilitātes nozīmi un ilgtermiņa finansiālo mērķu svarīgumu, tāpēc tu veic ieguldījumus un centies taupīt pēc iespējas vairāk, lai nodrošinātu savu finansiālo nākotni. Tu prasmīgi plāno un kontrolē savu tēriņu, lai maksimāli palielinātu savus iekrājumus.")
-  }
-}
-
-
-function myFunction() {
-  // let ienakumi = Number(document.getElementById("alga").value) + Number(document.getElementById("citia").value);
-  // document.getElementById('ienakumi').innerHTML = ienakumi;
-  var x = document.getElementById("myTable").rows[1].cells;
-  x[1].innerHTML = "kkas";
-}
 
 
 
