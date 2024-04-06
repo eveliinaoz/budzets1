@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,57 +10,77 @@
 <div class="header">
     <h1>GUDRĀNAUDA</h1>
 </div>
+
 <body>
+    <body onload="startTime()"></body>
+    <div class="plkst"><div id="txt"></div></div>
+<div class="budz">
+    <h1>Kas ir budžets?</h1>
+    <p>Budžets ir ieņēmumu un izdevumu aprēķins un plānošana, un parasti tas ir metodisks plāns, kā izlietot naudu
+        noteiktā
+        veidā.
+        Parasti budžetu veido, lai sasniegtu noteiktus finanšu mērķus, piemēram, atmaksātu vairākas kredītsaistības,
+        sasniegtu noteiktu uzkrājumu mērķi vai atgrieztos uz pareizā ceļa attiecībā uz ienākumiem un izdevumiem. Ir
+        daudz
+        dažādu iemeslu, kāpēc cilvēki veido budžetus, un vēl vairāk veidu, kā to darīt. Mūsdienu tehnoloģijas ir
+        pavērušas
+        ceļu daudzām dažādām budžeta veidošanas programmām un lietotnēm. Tām visām ir savi plusi un mīnusi, bet vislabāk
+        strādā tā, pie kuras budžeta veidotāji centīsies pieturēties pēc iespējas labāk.</p>
+    <h1>Kā veidot budžetu?</h1>
+    <p>Budžeta plānošanu kopumā var apkopot divos veidos: dzīvot atbilstoši saviem līdzekļiem un plānot nākotni.
+        Veiksmīga
+        budžeta plānošana parasti ietver detalizētu personīgo budžetu un tā ievērošanu.</p></div>
+    <br>
+    <div class="ptd">
+    <h1>50/30/20 Likums</h1>
+    <h1>Vajadzības: 50%</h1>
+    <p>Aptuveni pusei jūsu budžeta ir jāaizpilda vajadzības. Tie ir izdevumi, kas jāsedz neatkarīgi no situācijas,
+        piemēram:</p>
+    <ul>
+        <li>
+            <p>komunālo pakalpojumu rēķini</p>
+        </li>
+        <li>
+            <p>īres vai hipotekārā kredīta maksājumi</p>
+        </li>
+        <li>
+            <p>Veselības aprūpe</p>
+        </li>
+        <li>
+            <p>Pārtikas preces</p>
+        </li>
+    </ul>
+    <p>Ja jūs varat godīgi pateikt "es nevaru bez tā dzīvot", jūs esat identificējis vajadzību. Šajā kategorijā ietilpst
+        arī minimālie nepieciešamie maksājumi par kredītkarti vai aizdevumu.</p>
+    <h1>Vēlmes: 30%</h1>
+    <p>Jūs abonējat straumēšanas pakalpojumu, lai skatītos savu iecienītāko seriālu, nevis tāpēc, ka abonements jums ir
+        nepieciešams, lai dzīvotu. Vēlmes ir lietas, kas jums patīk un par kurām jūs tērējat naudu pēc savas izvēles,
+        piemēram:</p>
+    <ul>
+        <li>
+            <p>Abonementi</p>
+        </li>
+        <li>
+            <p>Hobiju piederumi</p>
+        </li>
+        <li>
+            <p>Restorāna maltītes</p>
+        </li>
+        <li>
+            <p>Atvaļinājums</p>
+        </li>
+    </ul>
+    <h1>Ietaupījums: 20%</h1>
+    <p>Atlikušos 20 % no jūsu budžeta vajadzētu novirzīt nākotnei. Jūs varat ieguldīt naudu fondā ārkārtas gadījumiem,
+    veikt iemaksas pensiju kontā vai veidot uzkrājumus pirmajai iemaksai par mājokli.</p></div>
 
 <br>
 
-<div class="kopa3">
-<table id="myTable">
-    <tr>
-        <td></td>
-        <td class="ptd">50/30/20</td>
-        <td class="budzets">Mans budžets</td>
-        <td class="starp">Starpība</td>
-    </tr>
-    <tr>
-        <td class="sadalas">Vajadzības</td>
-        <td class="vajadz532">x</td>
-        <td class="vajadzbudz">y</td>
-        <td class="vajadzstarp">z</td>
-    </tr>
-    <tr>
-        <td class="sadalas">Vēlmes</td>
-        <td class="velmes532">a</td>
-        <td class="velmesbudz">b</td>
-        <td class="velmesstarp">c</td>
-    </tr>
-    <tr>
-        <td class="sadalas">Iekrājumi</td>
-        <td class="iekr532">d</td>      
-        <td class="iekrbudz">e</td>
-        <td class="iekrstarp">f</td>
-    </tr>
-</table>
-</div>
+    <p> <button id="Atpakal" onclick="atpakal()" style="vertical-align:middle"><span>Atpakaļ</span></button></p>
 
-<p>  <button onclick="myFunction()">Aprēķināt</button></p>
-<p>  <button id="Atpakal" onclick="atpakal()" style="vertical-align:middle"><span>Atpakaļ</span></button></p>
+    <br>
 
-<br>
-<div class="TU">
-    <p>Tu esi:</p>
-
-
-<p> <button type="button" id="poga1" onclick="poga()">Parādīt</button> </p>
-
-
-
-    <img src="/bildes/majoklisb.jpg" id="majoklisb" style="display: none;">
-    <img src="/bildes/transportsb.jpg" id="transportsb" style="display: none;">
-    <img src="/bildes/macibasb.jpg" id="macibasb" style="display: none;">
-    <img src="/bildes/personigasvajb.jpg" id="personigasvajb" style="display: none;">
-    <img src="/bildes/iekrajumib.jpg" id="iekrajumib" style="display: none;">
-</div>
     <script src="script.js"></script>
 </body>
+
 </html>
